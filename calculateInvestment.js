@@ -225,13 +225,13 @@ result = Investment * 3.5;
 result = Math.round(parseFloat(Math.round(result * 100) / 100).toFixed(2));
 result = result.toString();
 document.getElementById("Investment4").innerHTML = result;
-Amount = 500 + " Sensex:"+ SensexAmt.toString() + " ,SensexIntra:"  + SensexIntraAmt.toString() + 
-			   " ,Nifty:"  + NiftyAmt.toString() + " NiftyIntra:"  + NiftyIntraAmt.toString() + 
-			   " ,MMI:"  + MMIAmt.toString() + "PE:"  + PEAmt.toString() + 
-			   " ,PB:"  + PBAmt.toString() + "Div_Yld:"  + Div_YldAmt.toString() + 
-			   " ,Nifty50ST: "  + Nifty50STAmt.toString() + " Nifty50PSAR:"  + Nifty50PSARAmt.toString() + 
-			   " ,Nifty50WilliamsR:"  + Nifty50WilliamsRAmt.toString() + " NiftyMidcap50ST:"  +NiftyMidcap50STAmt.toString() + 
-			   " ,NiftyMidcap50PSAR:"  + NiftyMidcap50PSARAmt.toString() + " NiftyMidcap50WilliamsR:" + NiftyMidcap50WilliamsRAmt.toString();
+Amount = 500 + " Sensex: "+ SensexAmt.toString() + "(wt) "+ SensexWt.toString() + " ,SensexIntra: "  + SensexIntraAmt.toString() +"(wt) "+  SensexIntraWt.toString() +
+			   " ,Nifty: "  + NiftyAmt.toString() + "(wt) "+NiftyWt.toString() + " NiftyIntra: "  + NiftyIntraAmt.toString() +"(wt) "+ NiftyIntraWt.toString() +
+			   " ,MMI: "  + MMIAmt.toString() + "(wt) "+MMIWeight.toString() + "PE: "  + PEAmt.toString() + "(wt) "+PEWeight.toString() +
+			   " ,PB: "  + PBAmt.toString() +"(wt) "+ PBWeight.toString() + "Div_Yld: "  + Div_YldAmt.toString() + "(wt) "+ DYWeight.toString() +
+			   " ,Nifty50ST: "  + Nifty50STAmt.toString() + " Nifty50PSAR: "  + Nifty50PSARAmt.toString() + 
+			   " ,Nifty50WilliamsR: "  + Nifty50WilliamsRAmt.toString() + " NiftyMidcap50ST: "  +NiftyMidcap50STAmt.toString() + 
+			   " ,NiftyMidcap50PSAR: "  + NiftyMidcap50PSARAmt.toString() + " NiftyMidcap50WilliamsR: " + NiftyMidcap50WilliamsRAmt.toString();
 document.getElementById("Amount").innerHTML = Amount;
 
 var d = new Date();
