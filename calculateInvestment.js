@@ -232,8 +232,7 @@ Amount = 500 + " Sensex:"+ SensexAmt.toString() + " ,SensexIntra:"  + SensexIntr
 			   " ,Nifty50ST: "  + Nifty50STAmt.toString() + " Nifty50PSAR:"  + Nifty50PSARAmt.toString() + 
 			   " ,Nifty50WilliamsR:"  + Nifty50WilliamsRAmt.toString() + " NiftyMidcap50ST:"  +NiftyMidcap50STAmt.toString() + 
 			   " ,NiftyMidcap50PSAR:"  + NiftyMidcap50PSARAmt.toString() + " NiftyMidcap50WilliamsR:" + NiftyMidcap50WilliamsRAmt.toString();
-PBAmt =  PBFact * PBWeight;
-document.getElementById("Amount").innerHTML = PBWeight;
+document.getElementById("Amount").innerHTML = Amount;
 
 var d = new Date();
 document.getElementById("showDate").innerHTML = d;
