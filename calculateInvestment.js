@@ -253,15 +253,15 @@ if (param >= 301)
      Weight =  0.9;
  else if (param <= 50 && param >= -50.99)
      Weight =  1.0;
- else if (param >= -100 && param <= -51.99)
+ else if (param <= -100 && param >= -51.99)
      Weight = 1.1;
- else if (param >= -150 && param <= -101.99)
+ else if (param <= -150 && param >= -101.99)
      Weight = 1.2;
- else if (param >= -200 && param <= -151.99)
+ else if (param <= -200 && param >= -151.99)
      Weight = 1.3;
- else if (param >= -250 && param <= -201.99)
+ else if (param <= -250 && param >= -201.99)
      Weight = 1.4;
- else if (param >= -300 && param <= -251.99)
+ else if (param <= -300 && param >= -251.99)
      Weight = 1.5;
  else if (param <= -301.99)
      Weight = 1.6;
