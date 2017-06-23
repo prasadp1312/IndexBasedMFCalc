@@ -45,166 +45,166 @@ NiftyIntraDiff = Nifty_Intra - Nifty_Today;
 NiftyIntraDiff = parseFloat(Math.round(NiftyIntraDiff * 100) / 100).toFixed(2);
 NiftyIntraWt = getWt(NiftyIntraDiff);
 NiftyIntraAmt = NiftyIntraFact * NiftyIntraWt;
- if (PE >= 23.5 && PE <= 23.99)
+ if (between(23.5,23.99,PE))
      PEWeight = 0.5;
- else if (PE >= 23.00 && PE <= 23.50)
+ else if (between(23.00,23.50,PE))
      PEWeight = 0.55;
- else if (PE >= 22.51 && PE <= 22.99)
+ else if (between(22.51,22.99,PE))
      PEWeight = 0.6;
- else if (PE >= 22.00 && PE <= 22.50)
+ else if (between(22.00,22.50,PE))
      PEWeight = 0.65;
- else if (PE >= 21.51 && PE <= 21.99)
+ else if (between(21.51,21.99,PE))
      PEWeight =  0.7;
- else if (PE >= 21.00 && PE <= 21.50)
+ else if (between(21.00,21.50,PE))
      PEWeight =  0.75;
- else if (PE >= 20.51 && PE <= 21.99)
+ else if (between(20.51,21.99,PE))
      PEWeight = 0.8;
- else if (PE >= 20.00 && PE <= 20.5)
+ else if (between(20.00,20.5,PE))
      PEWeight = 0.85;
- else if (PE >= 19.01 && PE <= 19.99)
+ else if (between(19.01,19.99,PE))
      PEWeight = 0.9;
- else if (PE >= 18.01 && PE <= 18.99)
+ else if (between(18.01,18.99,PE))
      PEWeight = 1.0;
- else if (PE >= 17.01 && PE <= 17.99)
+ else if (between(17.01,17.99,PE))
      PEWeight = 1.1;
- else if (PE >= 16.01 && PE <= 16.99)
+ else if (between(16.01,16.99,PE))
      PEWeight = 1.2;
- else if (PE >= 15.01 && PE <= 15.99)
+ else if (between(15.01,15.99,PE))
      PEWeight = 1.3;
- else if (PE >= 14.01 && PE <= 14.99)
+ else if (between(14.01,14.99,PE))
      PEWeight = 1.4;
- else if (PE >= 13.01 && PE <= 13.99)
+ else if (between(13.01,13.99,PE))
      PEWeight = 1.5;
 PEAmt =  PEFact * PEWeight;
-if (MMI >= 0 && MMI <= 29.99)
+if (between(0,29.99,MMI))
      MMIWeight = 1.5;
- else if (MMI >= 30 && MMI <= 35.99)
+ else if (between(30,35.99,MMI))
      MMIWeight = 1.4;
- else if (MMI >= 36 && MMI <= 40.99)
+ else if (between(36,40.99,MMI))
      MMIWeight = 1.3;
- else if (MMI >= 41 && MMI <= 45.00)
+ else if (between(41,45.00,MMI))
      MMIWeight = 1.2;
- else if (MMI >= 45.01 && MMI <= 49.99)
+ else if (between(45.01,49.99,MMI))
      MMIWeight =  1.1;
- else if (MMI >= 50 && MMI <= 55)
+ else if (between(50,55,MMI))
      MMIWeight =  1.0;
- else if (MMI >= 55.01 && MMI <= 60)
+ else if (between(55.01,60,MMI))
      MMIWeight = 0.9;
- else if (MMI >= 60.01 && MMI <= 65)
+ else if (between(60.01,65,MMI))
      MMIWeight = 0.8;
- else if (MMI >= 65.01 && MMI <= 70)
+ else if (between(65.01,70,MMI))
      MMIWeight = 0.7;
- else if (MMI >= 70.01 && MMI <= 75)
+ else if (between(70.01,75,MMI))
      MMIWeight = 0.6;
- else if (MMI >= 75.01 && MMI <= 80)
+ else if (between(75.01,80,MMI))
      MMIWeight = 0.5;
- else if (MMI >= 80.01 && MMI <= 100)
+ else if (between(80.01,100,MMI))
      MMIWeight = 0.4;
 	 
 MMIAmt = MMIFact * MMIWeight;
- if (PB >= 0 && PB <= 2.50)
+ if (between(0,2.50,PB))
      PBWeight = 1.55;
- else if (PB >= 2.51 && PB <= 2.55)
+ else if (between(2.51,2.55,PB))
      PBWeight = 1.5;
- else if (PB >= 2.56 && PB <= 2.60)
+ else if (between(2.56,2.60,PB))
      PBWeight = 1.45;
- else if (PB >= 2.61 && PB <= 2.65)
+ else if (between(2.61,2.65,PB))
      PBWeight = 1.4;
- else if (PB >= 2.66 && PB <= 2.70)
+ else if (between(2.66,2.70,PB))
      PBWeight =  1.35;
- else if (PB >= 2.71 && PB <= 2.75)
+ else if (between(2.71,2.75,PB))
      PBWeight =  1.3;
- else if (PB >= 2.76 && PB <= 2.80)
+ else if (between(2.76,2.80,PB))
      PBWeight = 1.25;
- else if (PB >= 2.81 && PB <= 2.85)
+ else if (between(2.81,2.85,PB))
      PBWeight = 1.2;
- else if (PB >= 2.86 && PB <= 2.90)
+ else if (between(2.86,2.90,PB))
      PBWeight = 1.15;
- else if (PB >= 2.91 && PB <= 2.95)
+ else if (between(2.91,2.95,PB))
      PBWeight = 1.10;
- else if (PB >= 2.96 && PB <= 3.00)
+ else if (between(2.96,3.00,PB))
      PBWeight = 1.05;
- else if (PB >= 3.01 && PB <= 3.05)
+ else if (between(3.01,3.05,PB))
      PBWeight = 1;
- else if (PB >= 3.06 && PB <= 3.10)
+ else if (between(3.06,3.10,PB))
      PBWeight = 0.95;
- else if (PB >= 3.11 && PB <= 3.15)
+ else if (between(3.11,3.15,PB))
      PBWeight = 0.90;
- else if (PB >= 3.16 && PB <= 3.20)
+ else if (between(3.16,3.20,PB))
      PBWeight = 0.85;
- else if (PB >= 3.21 && PB <= 3.25)
+ else if (between(3.21,3.25,PB))
      PBWeight = 0.80;
- else if (PB >= 3.26 && PB <= 3.30)
+ else if (between(3.26,3.30,PB))
      PBWeight =  0.75;
- else if (PB >= 3.31 && PB <= 3.35)
+ else if (between(3.31,3.35,PB))
      PBWeight =  0.70;
- else if (PB >= 3.36 && PB <= 3.40)
+ else if (between(3.36,3.40,PB))
      PBWeight = 0.65;
- else if (PB >= 3.41 && PB <= 3.45)
+ else if (between(3.41,3.45,PB))
      PBWeight = 0.60;
- else if (PB >= 3.46 && PB <= 3.50)
+ else if (between(3.46,3.50,PB))
      PBWeight = 0.55;
- else if (PB >= 3.51 && PB <= 3.55)
+ else if (between(3.51,3.55,PB))
      PBWeight = 0.50;
- else if (PB >= 3.56 && PB <= 3.60)
+ else if (between(3.56,3.60,PB))
      PBWeight = 0.45;
- else if (PB >= 3.61 && PB <= 3.65)
+ else if (between(3.61,3.65,PB))
      PBWeight = 0.40;
-else if (PB >= 3.66 && PB <= 3.70)
+else if (between(3.66,3.70,PB))
      PBWeight = 0.35;
- else if (PB >= 3.71 && PB <= 3.75)
+ else if (between(3.71,3.75,PB))
      PBWeight = 0.30;
- else if (PB >= 3.76 && PB <= 3.80)
+ else if (between(3.76,3.80,PB))
      PBWeight = 0.25;
- else if (PB >= 3.81 && PB <= 3.85)
+ else if (between(3.81,3.85,PB))
      PBWeight = 0.20;
- else if (PB >= 3.86 && PB <= 3.90)
+ else if (between(3.86,3.90,PB))
      PBWeight =  0.15;
- else if (PB >= 3.91 && PB <= 3.95)
+ else if (between(3.91,3.95,PB))
      PBWeight =  0.1;
- else if (PB >= 3.96 && PB <= 4.00)
+ else if (between(3.96,4.00,PB))
      PBWeight =  0.05;
 	 
 PBAmt =  PBFact * PBWeight;	 
  if (Div_Yld >= 2.9)
      DYWeight = 1.50;
- else if (Div_Yld >= 2.81 && Div_Yld <= 2.89)
+ else if (between(2.81,2.89,Div_Yld))
      DYWeight = 1.45;
- else if (Div_Yld >= 2.71 && Div_Yld <= 2.79)
+ else if (between(2.71,2.79,Div_Yld))
      DYWeight = 1.40;
- else if (Div_Yld >= 2.61 && Div_Yld <= 2.69)
+ else if (between(2.61,2.69,Div_Yld))
      DYWeight = 1.35;
- else if (Div_Yld >= 2.51 && Div_Yld <= 2.59)
+ else if (between(2.51,2.59,Div_Yld))
      DYWeight =  1.30;
- else if (Div_Yld >= 2.41 && Div_Yld <= 2.49)
+ else if (between(2.41,2.49,Div_Yld))
      DYWeight =  1.25;
- else if (Div_Yld >= 2.31 && Div_Yld <= 2.39)
+ else if (between(2.31,2.39,Div_Yld))
      DYWeight = 1.20;
- else if (Div_Yld >= 2.21 && Div_Yld <= 2.29)
+ else if (between(2.21,2.29,Div_Yld))
      DYWeight = 1.15;
- else if (Div_Yld >= 2.10 && Div_Yld <= 2.19)
+ else if (between(2.10,2.19,Div_Yld))
      DYWeight = 1.10;
- else if (Div_Yld >= 2.01 && Div_Yld <= 2.09)
+ else if (between(2.01,2.09,Div_Yld))
      DYWeight = 1.05;
- else if (Div_Yld >= 1.91 && Div_Yld <= 2.00)
+ else if (between(1.91,2.00,Div_Yld))
      DYWeight = 1.00;
- else if (Div_Yld >= 1.81 && Div_Yld <= 1.90)
+ else if (between(1.81,1.90,Div_Yld))
      DYWeight = 0.95;
- else if (Div_Yld >= 1.71 && Div_Yld <= 1.80)
+ else if (between(1.71,1.80,Div_Yld))
      DYWeight = 0.90;
- else if (Div_Yld >= 1.61 && Div_Yld <= 1.70)
+ else if (between(1.61,1.70,Div_Yld))
      DYWeight = 0.85;
- else if (Div_Yld >= 1.51 && Div_Yld <= 1.60)
+ else if (between(1.51,1.60,Div_Yld))
      DYWeight = 0.80;
- else if (Div_Yld >= 1.41 && Div_Yld <= 1.50)
+ else if (between(1.41,1.50,Div_Yld))
      DYWeight = 0.75;
- else if (Div_Yld >= 1.31 && Div_Yld <= 1.40)
+ else if (between(1.31,1.40,Div_Yld))
      DYWeight =  0.70;
- else if (Div_Yld >= 1.21 && Div_Yld <= 1.30)
+ else if (between(1.21,1.30,Div_Yld))
      DYWeight =  0.65;
- else if (Div_Yld >= 1.11 && Div_Yld <= 1.20)
+ else if (between(1.11,1.20,Div_Yld))
      DYWeight = 0.60;
- else if (Div_Yld >= 1.01 && Div_Yld <= 1.10)
+ else if (between(1.01,1.10,Div_Yld))
      DYWeight = 0.55;
  else if (Div_Yld <= 1)
      DYWeight = 0.50;
@@ -241,32 +241,40 @@ function getWt(param)
 {
 if (param >= 301)
      Weight = 0.4;
- else if (param >= 251 && param <= 300.99)
+ else if (between(251,300.99,param))
      Weight = 0.5;
- else if (param >= 201 && param <= 250.99)
+ else if (between(201,250.99,param))
      Weight = 0.6;
- else if (param >= 151 && param <= 200.99)
+ else if (between(151,200.99,param))
      Weight = 0.7;
- else if (param >= 101 && param <= 150.99)
+ else if (between(101,150.99,param))
      Weight = 0.8;
- else if (param >= 51 && param <= 100.99)
+ else if (between(51,100.99,param))
      Weight =  0.9;
- else if (param <= 50 && param >= -50.99)
+ else if (between(50,-50.99,param))
      Weight =  1.0;
- else if (param <= -100 && param >= -51.99)
+ else if (between(-100,-51.99,param))
      Weight = 1.1;
- else if (param <= -150 && param >= -101.99)
+ else if (between(-150,-101.99,param))
      Weight = 1.2;
- else if (param <= -200 && param >= -151.99)
+ else if (between(-200,-151.99,param))
      Weight = 1.3;
- else if (param <= -250 && param >= -201.99)
+ else if (between(-250,-201.99,param))
      Weight = 1.4;
- else if (param <= -300 && param >= -251.99)
+ else if (between(-300,-251.99,param))
      Weight = 1.5;
  else if (param <= -301.99)
-     Weight = 1.6;
-	 
+     Weight = 1.6;	 
 return Weight;
+}
+function between(lt1,lt2,param)
+{
+low = lt1;
+high = lt2;
+if (low > high){
+    low = lt2;
+    high = lt1; }
+return (param >= low && param <= high);
 }
 function getVal(param)
 {
@@ -276,20 +284,20 @@ return val;
 }
 function filldefaultvalues()
 {
-document.getElementById("Sensex_Today").value = 29926.15;
-document.getElementById("Sensex_Previous").value = 29858.8;
-document.getElementById("Nifty_Today").value = 18162.85;
-document.getElementById("Nifty_Previous").value = 18048.6;
-document.getElementById("Sensex_Intra").value = 29957.9;
-document.getElementById("Nifty_Intra").value = 18271.1;
-document.getElementById("PE").value = 22.67;
-document.getElementById("PB").value = 2.92;
-document.getElementById("MMI").value = 51.17;
-document.getElementById("Div_Yld").value = 1.39;
+document.getElementById("Sensex_Today").value = 31290.74;
+document.getElementById("Sensex_Previous").value = 31283.64;
+document.getElementById("Nifty_Today").value = 17907.90;
+document.getElementById("Nifty_Previous").value = 18045.85;
+document.getElementById("Sensex_Intra").value = 31160;
+document.getElementById("Nifty_Intra").value = 17619;
+document.getElementById("PE").value = 22.91;
+document.getElementById("PB").value = 3.00;
+document.getElementById("MMI").value = 49.04;
+document.getElementById("Div_Yld").value = 1.24;
 document.getElementById("Nifty50ST").value = 2;
-document.getElementById("Nifty50PSAR").value = 2;
+document.getElementById("Nifty50PSAR").value = 0;
 document.getElementById("Nifty50WilliamsR").value = 0;
-document.getElementById("NiftyMidcap50ST").value = 2;
+document.getElementById("NiftyMidcap50ST").value = 0;
 document.getElementById("NiftyMidcap50PSAR").value = 2;
 document.getElementById("NiftyMidcap50WilliamsR").value = 0;
 }
