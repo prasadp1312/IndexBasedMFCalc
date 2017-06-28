@@ -251,17 +251,17 @@ if (param >= 301)
      Weight = 0.8;
  else if (between(51,100.99,param))
      Weight =  0.9;
- else if (between(50,-50.99,param))
+ else if (between(50.99,-50.99,param))
      Weight =  1.0;
- else if (between(-100,-51.99,param))
+ else if (between(-100.99,-51,param))
      Weight = 1.1;
- else if (between(-150,-101.99,param))
+ else if (between(-150.99,-101,param))
      Weight = 1.2;
- else if (between(-200,-151.99,param))
+ else if (between(-200.99,-151,param))
      Weight = 1.3;
- else if (between(-250,-201.99,param))
+ else if (between(-250.99,-201,param))
      Weight = 1.4;
- else if (between(-300,-251.99,param))
+ else if (between(-300.99,-251,param))
      Weight = 1.5;
  else if (param <= -301.99)
      Weight = 1.6;	 
