@@ -166,23 +166,23 @@ else if (between(3.66,3.70,PB))
      PBWeight =  0.05;
 	 
 PBAmt =  PBFact * PBWeight;	 
- if (Div_Yld >= 2.9)
+ if (Div_Yld >= 2.91)
      DYWeight = 1.50;
- else if (between(2.81,2.89,Div_Yld))
+ else if (between(2.81,2.90,Div_Yld))
      DYWeight = 1.45;
- else if (between(2.71,2.79,Div_Yld))
+ else if (between(2.71,2.80,Div_Yld))
      DYWeight = 1.40;
- else if (between(2.61,2.69,Div_Yld))
+ else if (between(2.61,2.70,Div_Yld))
      DYWeight = 1.35;
- else if (between(2.51,2.59,Div_Yld))
+ else if (between(2.51,2.60,Div_Yld))
      DYWeight =  1.30;
- else if (between(2.41,2.49,Div_Yld))
+ else if (between(2.41,2.50,Div_Yld))
      DYWeight =  1.25;
- else if (between(2.31,2.39,Div_Yld))
+ else if (between(2.31,2.40,Div_Yld))
      DYWeight = 1.20;
- else if (between(2.21,2.29,Div_Yld))
+ else if (between(2.21,2.30,Div_Yld))
      DYWeight = 1.15;
- else if (between(2.10,2.19,Div_Yld))
+ else if (between(2.10,2.20,Div_Yld))
      DYWeight = 1.10;
  else if (between(2.01,2.09,Div_Yld))
      DYWeight = 1.05;
