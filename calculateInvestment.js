@@ -76,13 +76,14 @@ NiftyIntraAmt = NiftyIntraFact * NiftyIntraWt;
  else if (between(13.01,13.99,PE))
      PEWeight = 1.5;
 PEAmt =  PEFact * PEWeight;
+	
 if (between(0,29.99,MMI))
      MMIWeight = 1.5;
  else if (between(30,35.99,MMI))
      MMIWeight = 1.4;
- else if (between(36,40.99,MMI))
+ else if (between(36,40,MMI))
      MMIWeight = 1.3;
- else if (between(41,45.00,MMI))
+ else if (between(40.01,45.00,MMI))
      MMIWeight = 1.2;
  else if (between(45.01,49.99,MMI))
      MMIWeight =  1.1;
@@ -99,9 +100,9 @@ if (between(0,29.99,MMI))
  else if (between(75.01,80,MMI))
      MMIWeight = 0.5;
  else if (between(80.01,100,MMI))
-     MMIWeight = 0.4;
-	 
+     MMIWeight = 0.4;	 
 MMIAmt = MMIFact * MMIWeight;
+	
  if (between(0,2.50,PB))
      PBWeight = 1.55;
  else if (between(2.51,2.55,PB))
