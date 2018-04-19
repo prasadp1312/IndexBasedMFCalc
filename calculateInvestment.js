@@ -45,39 +45,66 @@ NiftyIntraDiff = Nifty_Intra - Nifty_Today;
 NiftyIntraDiff = parseFloat(Math.round(NiftyIntraDiff * 100) / 100).toFixed(2);
 NiftyIntraWt = getWt(NiftyIntraDiff);
 NiftyIntraAmt = NiftyIntraFact * NiftyIntraWt;
- if (between(23.5,23.99,PE))
+	
+ if (between(26.51,26.99,PE))
+     PEWeight = 0.2;
+ else if (between(26.00,26.5,PE))
+     PEWeight = 0.25;
+ else if (between(25.50,25.99,PE))
+     PEWeight = 0.3;
+ else if (between(25.00,25.5,PE))
+     PEWeight = 0.35;
+ else if (between(24.51,24.99,PE))
+     PEWeight =  0.4;
+ else if (between(24.00,24.5,PE)) 
+     PEWeight =  0.45;
+ else if (between(23.5,23.99,PE)) 
      PEWeight = 0.5;
- else if (between(23.00,23.50,PE))
+ else if (between(23.0,23.5,PE)) 
      PEWeight = 0.55;
- else if (between(22.51,22.99,PE))
+ else if (between(22.51,22.99,PE)) 
      PEWeight = 0.6;
- else if (between(22.00,22.50,PE))
+ else if (between(22.0,22.5,PE))
      PEWeight = 0.65;
  else if (between(21.51,21.99,PE))
-     PEWeight =  0.7;
- else if (between(21.00,21.50,PE))
-     PEWeight =  0.75;
- else if (between(20.51,21.99,PE))
-     PEWeight = 0.8;
- else if (between(20.00,20.5,PE))
+     PEWeight = 0.7;
+ else if (between(21,21.5,PE)) 
+     PEWeight = 0.75;
+ else if (between(20.51,20.99,PE)) 
+     PEWeight = 0.80;
+ else if (between(20,20.5,PE)) 
      PEWeight = 0.85;
- else if (between(19.01,19.99,PE))
+ else if (between(19,19.99,PE))
      PEWeight = 0.9;
- else if (between(18.01,18.99,PE))
+ else if (between(18,18.99,PE))
      PEWeight = 1.0;
- else if (between(17.01,17.99,PE))
+ else if (between(17,17.99,PE))
      PEWeight = 1.1;
- else if (between(16.01,16.99,PE))
+ else if (between(16,16.99,PE))
      PEWeight = 1.2;
- else if (between(15.01,15.99,PE))
+ else if (between(15,15.99,PE))
      PEWeight = 1.3;
- else if (between(14.01,14.99,PE))
+ else if (between(14,14.99,PE))
      PEWeight = 1.4;
- else if (between(13.01,13.99,PE))
+ else if (between(13,13.99,PE))
      PEWeight = 1.5;
 PEAmt =  PEFact * PEWeight;
-	
-if (between(0,29.99,MMI))
+
+if (between(0,4.99,MMI))
+     MMIWeight = 2;
+ else if (between(5,9.99,MMI))
+     MMIWeight = 1.9;
+ else if (between(5,9.99,MMI))
+     MMIWeight = 1.9;
+ else if (between(10,14.99,MMI))
+     MMIWeight = 1.8;
+ else if (between(15,19.99,MMI))
+     MMIWeight = 1.7;
+ else if (between(20,24.99,MMI))
+     MMIWeight = 1.6;
+ else if (between(25,27.49,MMI))
+     MMIWeight = 1.55;
+ else if (between(27.5,29.99,MMI))
      MMIWeight = 1.5;
  else if (between(30,35.99,MMI))
      MMIWeight = 1.4;
@@ -164,9 +191,9 @@ else if (between(3.66,3.70,PB))
  else if (between(3.91,3.95,PB))
      PBWeight =  0.1;
  else if (between(3.96,4.00,PB))
-     PBWeight =  0.05;
-	 
-PBAmt =  PBFact * PBWeight;	 
+     PBWeight =  0.05; 
+PBAmt =  PBFact * PBWeight;
+	
  if (Div_Yld >= 2.91)
      DYWeight = 1.50;
  else if (between(2.81,2.90,Div_Yld))
@@ -210,6 +237,7 @@ PBAmt =  PBFact * PBWeight;
  else if (Div_Yld <= 1)
      DYWeight = 0.50;
 Div_YldAmt =  Div_YldFact * DYWeight;	
+	
 Investment = 500 + SensexAmt + SensexIntraAmt + NiftyAmt + NiftyIntraAmt + MMIAmt + PEAmt + PBAmt + Div_YldAmt + Nifty50STAmt + Nifty50PSARAmt + Nifty50WilliamsRAmt +NiftyMidcap50STAmt + NiftyMidcap50PSARAmt + NiftyMidcap50WilliamsRAmt;
 Investment = Math.round(parseFloat(Math.round(Investment * 100) / 100).toFixed(2));
 result = Investment.toString();
