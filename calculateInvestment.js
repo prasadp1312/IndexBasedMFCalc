@@ -214,10 +214,7 @@ Investment = 500 + SensexAmt + SensexIntraAmt + NiftyAmt + NiftyIntraAmt + MMIAm
 Investment = Math.round(parseFloat(Math.round(Investment * 100) / 100).toFixed(2));
 result = Investment.toString();
 document.getElementById("Investment1").innerHTML = result;
-result = Investment * 1.75;
-result = Math.round(parseFloat(Math.round(result * 0.04) / 0.04).toFixed(2));
-result = result.toString();
-document.getElementById("Investment2").innerHTML = result;
+setMultiplierResult(Investment,1.75,"Investment2")
 result = Investment * 2.5;
 result = Math.round(parseFloat(Math.round(result * 0.04) / 0.04).toFixed(2));
 result = result.toString();
@@ -237,6 +234,13 @@ document.getElementById("Amount").innerHTML = Amount;
 
 var d = new Date();
 document.getElementById("showDate").innerHTML = d;
+}
+function setMultiplierResult(Investment,Multiplier,SetLocation)
+{
+result = Investment * Multiplier;
+result = Math.round(parseFloat(Math.round(result * 0.04) / 0.04).toFixed(2));
+result = result.toString();
+document.getElementById(SetLocation).innerHTML = result;	
 }
 function getWt(param)
 {
