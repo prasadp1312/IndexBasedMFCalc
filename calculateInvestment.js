@@ -217,6 +217,14 @@ document.getElementById("Investment1").innerHTML = result;
 setMultiplierResult(Investment,1.75,"Investment2");
 setMultiplierResult(Investment,2.5,"Investment3");
 setMultiplierResult(Investment,3.0,"Investment4");
+setMultiplierResult(Investment,3.5,"Investment5");
+setMultiplierResult(Investment,4.0,"Investment6");
+setMultiplierResult(Investment,5.0,"Investment7");
+setMultiplierResult(Investment,5.75,"Investment8");
+setMultiplierResult(Investment,7.5,"Investment9");
+setMultiplierResult(Investment,8.25,"Investment10");
+setMultiplierResult(Investment,9.00,"Investment11");
+setMultiplierResult(Investment,10.00,"Investment12");
 Amount = 500 + " Sensex: "+ SensexAmt.toString() + "(wt) "+ SensexWt.toString() + "\n ,SensexIntra: "  + SensexIntraAmt.toString() +"(wt) "+  SensexIntraWt.toString() +
 			   " ,Nifty: "  + NiftyAmt.toString() + "(wt) "+NiftyWt.toString() + " NiftyIntra: "  + NiftyIntraAmt.toString() +"(wt) "+ NiftyIntraWt.toString() +
 			   " ,MMI: "  + MMIAmt.toString() + "(wt) "+MMIWeight.toString() + "PE: "  + PEAmt.toString() + "(wt) "+PEWeight.toString() +
