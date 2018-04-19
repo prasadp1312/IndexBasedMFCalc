@@ -214,15 +214,9 @@ Investment = 500 + SensexAmt + SensexIntraAmt + NiftyAmt + NiftyIntraAmt + MMIAm
 Investment = Math.round(parseFloat(Math.round(Investment * 100) / 100).toFixed(2));
 result = Investment.toString();
 document.getElementById("Investment1").innerHTML = result;
-setMultiplierResult(Investment,1.75,"Investment2")
-result = Investment * 2.5;
-result = Math.round(parseFloat(Math.round(result * 0.04) / 0.04).toFixed(2));
-result = result.toString();
-document.getElementById("Investment3").innerHTML = result;
-result = Investment * 3.5;
-result = Math.round(parseFloat(Math.round(result * 0.04) / 0.04).toFixed(2));
-result = result.toString();
-document.getElementById("Investment4").innerHTML = result;
+setMultiplierResult(Investment,1.75,"Investment2");
+setMultiplierResult(Investment,2.5,"Investment3");
+setMultiplierResult(Investment,3.0,"Investment4");
 Amount = 500 + " Sensex: "+ SensexAmt.toString() + "(wt) "+ SensexWt.toString() + "\n ,SensexIntra: "  + SensexIntraAmt.toString() +"(wt) "+  SensexIntraWt.toString() +
 			   " ,Nifty: "  + NiftyAmt.toString() + "(wt) "+NiftyWt.toString() + " NiftyIntra: "  + NiftyIntraAmt.toString() +"(wt) "+ NiftyIntraWt.toString() +
 			   " ,MMI: "  + MMIAmt.toString() + "(wt) "+MMIWeight.toString() + "PE: "  + PEAmt.toString() + "(wt) "+PEWeight.toString() +
